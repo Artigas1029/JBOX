@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AudioSubtitlesActivity"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="Audio &amp; Subtitles"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/text"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="15dp">
+
+        <TextView
+            android:id="@+id/volumeLevelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="12dp"
+            android:text="Volume"
+            android:textColor="@color/gray"
+            android:textSize="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/volume_out"/>
+            <SeekBar
+                android:id="@+id/seekBarVolume"
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:max="100"
+                android:progress="50"
+                android:progressTint="@color/orange"
+                android:layout_marginBottom="20dp"/>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/volume_in"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="14dp"
+        android:text="Movie Audio"
+        android:textColor="@color/gray"
+        android:textSize="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/audioEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/text"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:text="English"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/rbAudioEnglish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="260dp"
+            android:buttonTint="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/audioKorean"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/text"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="12dp"
+            android:text="Korean"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+
+        <RadioButton
+            android:id="@+id/rbAudioKorean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="260dp"
+            android:buttonTint="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/audioFilipino"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/text"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="12dp"
+            android:text="Filipino"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+
+        <RadioButton
+            android:id="@+id/rbAudioFilipino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="260dp"
+            android:buttonTint="@color/white"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="14dp"
+        android:text="Subtitle"
+        android:textColor="@color/gray"
+        android:textSize="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/subEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/text"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="12dp"
+            android:text="English"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+
+        <RadioButton
+            android:id="@+id/rbSubEnglish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="260dp"
+            android:buttonTint="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subKorean"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/text"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="12dp"
+            android:text="Korean"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+
+        <RadioButton
+            android:id="@+id/rbSubKorean"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="260dp"
+            android:buttonTint="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/subFilipino"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@drawable/text"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="12dp"
+            android:text="Filipino"
+            android:textColor="@color/white"
+            android:textSize="16dp"/>
+
+        <RadioButton
+            android:id="@+id/rbSubFilipino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="5dp"
+            android:buttonTint="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

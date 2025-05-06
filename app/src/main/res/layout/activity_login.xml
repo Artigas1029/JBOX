@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#101010">
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_gravity="right"
+        android:src="@drawable/logo"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        tools:ignore="RtlHardcoded"
+        android:contentDescription="@null"
+        >
+    </ImageView>
+    <LinearLayout
+        android:layout_width="353dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/radius"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:inputType="text"
+            android:textColorHint="@color/white"
+            android:hint="Email"
+            tools:ignore="HardCodedText,TextFields"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="353dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/radius"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/white"
+            tools:ignore="HardCodedText"
+            android:textColor="@color/white"
+            android:layout_marginStart="10dp">
+        </EditText>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/radius"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        tools:ignore="HardCodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Forgot Password?"
+        tools:ignore="HardCodedText"
+        android:textColor="@color/white"
+        android:layout_gravity="center">
+    </TextView>
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            tools:ignore="HardCodedText"
+            android:text="New to JBox?"
+            android:textColor="@color/white">
+        </TextView>
+        <Button
+            android:id="@+id/registeraccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius"
+            android:backgroundTint="#FF9D00"
+            android:padding="4dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginStart="10dp"
+            android:text="Sign up now."
+            tools:ignore="HardCodedText"
+            android:textColor="@color/black">
+        </Button>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/backhome"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/arrow" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0.09"
+            android:text="App Settings"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="105dp"
+            android:layout_marginTop="23dp"
+            android:src="@drawable/tb" />
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/profile"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Video Playback"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp">
+    </TextView>
+    <LinearLayout
+        android:layout_width="353dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/radius"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="353dp"
+            android:layout_height="43dp"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="1dp"
+                android:src="@drawable/signal" />
+            <LinearLayout
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="256dp"
+                    android:layout_height="20sp"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="serif"
+                    android:text="Playback Speed"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    android:layout_marginTop="2dp"/>
+                <TextView
+                    android:layout_width="256dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="25dp"
+                    android:text="Automatic"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:text="Downloads"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+    <LinearLayout
+        android:layout_width="353dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/radius"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/wifi" />
+        <TextView
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:text="Wi-Fi Only"
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="353dp"
+        android:layout_height="53dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/radius"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="353dp"
+            android:layout_height="43dp"
+            android:orientation="horizontal"
+            android:paddingTop="4dp">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/quality" />
+            <LinearLayout
+                android:layout_width="267dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="256dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Video Quality"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="256dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="25dp"
+                    android:text="Higher"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="353dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/radius"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/del" />
+        <TextView
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:text="Delete All Download"
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp">
+        </TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:textSize="19dp"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="353dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/radius"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/speed" />
+
+        <TextView
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="25dp"
+            android:text="Internet Speed"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="353dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/radius"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/privacy" />
+        <TextView
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:text="Privacy Policy"
+            android:textSize="16dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/devpage"
+        android:layout_width="353dp"
+        android:layout_height="43dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/radius"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/dev" />
+        <TextView
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:text="Developers Page"
+            android:textSize="17dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp" />
+
+    </LinearLayout>
+</LinearLayout>

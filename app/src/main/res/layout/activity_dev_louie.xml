@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/louie"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D8000000"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:src="@drawable/close"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="38dp"
+                android:text="Louie Albert Canen"
+                android:layout_marginTop="60dp"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="38dp"
+                android:text="Project Manager"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="38dp"
+                android:text="“Death before Dishonor”"
+                android:textSize="9dp"
+                android:textColor="@color/gray"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="38dp"
+                android:layout_marginTop="20dp"
+                android:text="Project Manager! They are the orchestrators and drivers of a project. Think of them as the central point of communication and the person ultimately responsible for ensuring a project is completed successfully."
+                android:letterSpacing="0.1"
+                android:justificationMode="inter_word"
+                android:textSize="16dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Team"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="38dp"
+            android:layout_marginTop="100dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/louie"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/louie" />
+            <ImageView
+                android:id="@+id/tapere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/taps" />
+            <ImageView
+                android:id="@+id/aiken"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/aiken" />
+            <ImageView
+                android:id="@+id/johanna"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/johanna" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
