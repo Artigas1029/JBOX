@@ -11,6 +11,8 @@ class LoadingActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_loading)
 
+        //mag add kog comment
+
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
