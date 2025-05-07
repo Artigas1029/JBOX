@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#151515">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/arrow"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Video Quality"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn1080p"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="1080p"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/smallrad"
+        android:backgroundTint="#202020"
+        android:textColor="@android:color/white"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"/>
+
+    <Button
+        android:id="@+id/btn720p"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="720p"
+        android:layout_marginBottom="8dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:background="@drawable/smallrad"
+        android:backgroundTint="#202020"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btn480p"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="480p"
+        android:layout_marginBottom="8dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:background="@drawable/smallrad"
+        android:backgroundTint="#202020"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btn360p"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="360p"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:background="@drawable/smallrad"
+        android:backgroundTint="#202020"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

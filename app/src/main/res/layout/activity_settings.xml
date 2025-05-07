@@ -7,7 +7,8 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp">
 
         <ImageView
             android:id="@+id/backhome"
@@ -29,18 +30,11 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="25dp"
-            android:layout_marginLeft="105dp"
-            android:layout_marginTop="23dp"
-            android:src="@drawable/tb" />
-
-        <ImageView
             android:layout_width="45dp"
             android:layout_height="45dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="150dp"
             android:layout_marginRight="35dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="5dp"
             android:src="@drawable/profile"/>
 
     </LinearLayout>
@@ -54,6 +48,7 @@
         android:layout_marginTop="10dp">
     </TextView>
     <LinearLayout
+        android:id="@+id/playbackSpeedLayout"
         android:layout_width="353dp"
         android:layout_height="58dp"
         android:layout_gravity="center"
@@ -72,7 +67,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="25dp"
                 android:layout_marginBottom="1dp"
-                android:src="@drawable/signal" />
+                android:src="@drawable/playbackspeed" />
             <LinearLayout
                 android:layout_width="267dp"
                 android:layout_height="wrap_content"
@@ -80,19 +75,19 @@
                 <TextView
                     android:layout_width="256dp"
                     android:layout_height="20sp"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginLeft="10dp"
                     android:fontFamily="serif"
                     android:text="Playback Speed"
                     android:textColor="@color/white"
                     android:textSize="15dp"
-                    android:layout_marginTop="2dp"/>
+                    />
                 <TextView
+                    android:id="@+id/playbackSpeedValue"
                     android:layout_width="256dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dp"
                     android:layout_marginRight="25dp"
-                    android:text="Automatic"
+                    android:text="Normal"
                     android:textColor="@color/white" />
             </LinearLayout>
         </LinearLayout>
@@ -105,31 +100,42 @@
         android:text="Downloads"
         android:textColor="@color/white"
         android:textSize="16dp" />
+    <!--Wi-Fi Only-->
     <LinearLayout
         android:layout_width="353dp"
         android:layout_height="43dp"
         android:layout_gravity="center"
         android:layout_marginTop="5dp"
         android:background="@drawable/radius"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
         <ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:layout_gravity="center"
             android:layout_marginLeft="25dp"
             android:src="@drawable/wifi" />
+
         <TextView
-            android:layout_width="256dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginRight="25dp"
+            android:layout_weight="1"
             android:text="Wi-Fi Only"
             android:textSize="17dp"
-            android:layout_gravity="center"
             android:textColor="@color/white"
-            android:layout_marginLeft="10dp">
-        </TextView>
+            android:layout_marginLeft="10dp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:checked="true"
+            android:thumbTint="@color/white"
+            android:trackTint="#FFFFFF"/>
     </LinearLayout>
+<!--Video Quality-->
     <LinearLayout
+        android:id="@+id/VideoQualityyy"
         android:layout_width="353dp"
         android:layout_height="53dp"
         android:layout_gravity="center"
@@ -162,11 +168,12 @@
                     android:textSize="15dp" />
 
                 <TextView
+                    android:id="@+id/video_quality_textview"
                     android:layout_width="256dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="25dp"
-                    android:text="Higher"
+                    android:text="1080p"
                     android:textColor="@color/white" />
             </LinearLayout>
         </LinearLayout>
@@ -206,6 +213,7 @@
     </TextView>
 
     <LinearLayout
+        android:id="@+id/internetSpeedLayout"
         android:layout_width="353dp"
         android:layout_height="43dp"
         android:layout_gravity="center"
