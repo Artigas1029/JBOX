@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" /> <!--Internet Permission ni para net speed-->
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.JBoxx"
         tools:targetApi="31">
+        <activity
+            android:name=".VideoQualityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlaybackSpeedActivity"
+            android:exported="false" />
         <activity
             android:name=".DevTapereActivity"
             android:exported="false" />
@@ -51,11 +59,11 @@
         <activity
             android:name=".RegisterActivity"
             android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".LoginActivity"-->
-<!--            android:exported="false" />-->
         <activity
             android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoadingActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
