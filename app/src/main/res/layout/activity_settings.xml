@@ -178,30 +178,7 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="353dp"
-        android:layout_height="43dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/radius"
-        android:orientation="horizontal">
-        <ImageView
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_gravity="center"
-            android:layout_marginLeft="25dp"
-            android:src="@drawable/del" />
-        <TextView
-            android:layout_width="256dp"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="25dp"
-            android:text="Delete All Download"
-            android:textSize="17dp"
-            android:layout_gravity="center"
-            android:textColor="@color/white"
-            android:layout_marginLeft="10dp">
-        </TextView>
-    </LinearLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
