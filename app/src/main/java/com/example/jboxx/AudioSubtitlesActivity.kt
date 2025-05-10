@@ -1,8 +1,10 @@
 package com.example.jboxx
 
 import android.app.Activity
+import android.content.Intent
 import android.media.AudioManager
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.RadioButton
 import android.widget.SeekBar
 import android.widget.TextView
@@ -20,6 +22,12 @@ class AudioSubtitlesActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_audio_subtitles)
+
+        val backButton = findViewById<ImageView>(R.id.imageview_back)
+        backButton.setOnClickListener {
+            startActivity(Intent(this, ProfileActivity::class.java))
+            finish()
+        }
 
         val seekBar = findViewById<SeekBar>(R.id.seekBarVolume)
         val volumeLevelText = findViewById<TextView>(R.id.volumeLevelText)

@@ -12,13 +12,27 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.JBoxx"
+        android:theme="@style/Theme.Jboxx"
+
         tools:targetApi="31">
         <activity
+<<<<<<< Updated upstream
             android:name=".VideoQualityActivity"
             android:exported="false" />
         <activity
             android:name=".PlaybackSpeedActivity"
+=======
+            android:name=".TicketBookingActivity"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".VideoPlayerActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".SearchActivity"
+>>>>>>> Stashed changes
             android:exported="false" />
         <activity
             android:name=".DevTapereActivity"
